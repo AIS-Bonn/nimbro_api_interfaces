@@ -1,7 +1,10 @@
-string api_type    # Specifies the API type for which the usage is being requested; Leave blank to respond with all types
-string stamp_start # Discard usage before this time (parsed with datetime.fromisoformat); Leave blank to consider everything from the first usage
-string stamp_end   # Discard usage after this time (parsed with datetime.fromisoformat); Leave blank to consider everything until the last usage
+string api_type     # Discard usage with other API types; Leave blank to retrieve all API types
+string api_endpoint # Discard usage with other endpoints; Leave blank to retrieve all endpoints
+string model_name   # Discard usage with other models; Leave blank to retrieve all models
+string identifier   # Discard usage with other identifiers; Leave blank to retrieve all identifiers
+string stamp_start  # Discard usage before this time (parsed with datetime.fromisoformat); Leave blank to retrieve everything from the first usage
+string stamp_end    # Discard usage after this time (parsed with datetime.fromisoformat); Leave blank to retrieve everything until the last usage
 ---
-bool   success     # Indicates the success or failure of the service call
-string message     # A natural language summary of the service call outcome
-string usage       # A text containing the requested usage encoded as JSON
+bool   success      # Indicates the success or failure of the service call
+string message      # A natural language summary of the service call outcome
+string usage        # A text containing the requested usage encoded as JSON

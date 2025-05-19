@@ -1,6 +1,7 @@
 string api_type
 string api_endpoint
 string model_name
-uint64 input_tokens_uncached
-uint64 input_tokens_cached
-uint64 output_tokens
+string identifier
+uint64 tokens_input_uncached
+uint64 tokens_input_cached
+uint64 tokens_output

@@ -4,6 +4,7 @@ string   text               # The text content of the message added; For multi-m
 bool     reset_context      # Clears the context of the completions node so that the added message will be its first element
 string   tool_response_id   # If not empty, this indicates that the text is a response to a tool call with that ID
 string   response_type      # Must be 'none' (no response, just add to context), 'text' (response must be text), 'tool name' (response must call specified tool), 'auto' (whatever), or 'always' (response must contain at least one tool call)
+string   identifier         # An identifier that is passed to the usage monitor to enable filtering
 ---
 bool     success            # Indicates the success or failure of the service call
 string   message            # A natural language summary of the service call outcome

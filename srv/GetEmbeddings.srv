@@ -1,4 +1,5 @@
 string[]    texts      # A list of texts for which embeddings are to be retrieved
+string      identifier # An identifier that is passed to the usage monitor to enable filtering
 ---
 bool        success    # Indicates the success or failure of the service call
 string      message    # A natural language summary of the service call outcome

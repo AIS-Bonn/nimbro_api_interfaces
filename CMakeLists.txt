@@ -25,21 +25,22 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/ApiUsage.msg"
   "msg/Embedding.msg"
 
-  "srv/CompletionsPrompt.srv"
-  "srv/CompletionsStop.srv"
-  "srv/CompletionsGetTools.srv"
-  "srv/CompletionsSetTools.srv"
   "srv/CompletionsGetContext.srv"
-  "srv/CompletionsRemoveContext.srv"
-  "srv/CompletionsManage.srv"
-  "srv/CompletionsGetStatus.srv"
   "srv/CompletionsGetSettings.srv"
+  "srv/CompletionsGetStatus.srv"
+  "srv/CompletionsGetTools.srv"
+  "srv/CompletionsManage.srv"
+  "srv/CompletionsPrompt.srv"
+  "srv/CompletionsRemoveContext.srv"
+  "srv/CompletionsSetTools.srv"
+  "srv/CompletionsStop.srv"
 
   "srv/GetEmbeddings.srv"
   "srv/GetImage.srv"
+  "srv/GetNimbroVision.srv"
   "srv/GetSpeech.srv"
-  "srv/TriggerFeedback.srv"
   "srv/GetUsage.srv"
+  "srv/TriggerFeedback.srv"
 
   DEPENDENCIES std_msgs sensor_msgs
 )
