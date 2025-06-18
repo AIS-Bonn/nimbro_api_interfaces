@@ -1,6 +1,7 @@
-string  flavor  # The flavor of the model used
-string  data    # The payload of the API request corresponding to the model used (sorry dear ROS gods)
+uint16  model_id # The index of the model used
+string  flavor   # The flavor of the model used
+string  data     # The payload of the API request corresponding to the model used (sorry dear ROS gods)
 ---
-bool    success # Indicates the success or failure of the service call
-string  message # A natural language summary of the service call outcome
-string  result  # The payload of the API response corresponding to the model used (sorry dear ROS gods)
+bool    success  # Indicates the success or failure of the service call
+string  message  # A natural language summary of the service call outcome
+string  result   # The payload of the API response corresponding to the model used (sorry dear ROS gods)
