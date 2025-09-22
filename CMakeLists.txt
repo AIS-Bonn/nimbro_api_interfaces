@@ -22,25 +22,24 @@ find_package(sensor_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/ApiUsage.msg"
   "msg/Embedding.msg"
 
-  "srv/CompletionsGetContext.srv"
-  "srv/CompletionsGetSettings.srv"
-  "srv/CompletionsGetStatus.srv"
-  "srv/CompletionsGetTools.srv"
+  "srv/CompletionsContextGet.srv"
+  "srv/CompletionsContextSet.srv"
   "srv/CompletionsManage.srv"
   "srv/CompletionsPrompt.srv"
-  "srv/CompletionsRemoveContext.srv"
-  "srv/CompletionsSetTools.srv"
-  "srv/CompletionsStop.srv"
+  "srv/CompletionsSettingsGet.srv"
+  "srv/CompletionsStatusGet.srv"
+  "srv/CompletionsToolsGet.srv"
+  "srv/CompletionsToolsSet.srv"
+  "srv/CompletionsInterrupt.srv"
 
-  "srv/GetEmbeddings.srv"
-  "srv/GetImage.srv"
-  "srv/GetNimbroVision.srv"
-  "srv/GetSpeech.srv"
-  "srv/GetUsage.srv"
+  "srv/EmbeddingsGet.srv"
+  "srv/ImagesGet.srv"
+  "srv/NimbroVisionGet.srv"
+  "srv/SpeechGet.srv"
   "srv/TriggerFeedback.srv"
+  "srv/UsageGet.srv"
 
   DEPENDENCIES std_msgs sensor_msgs
 )

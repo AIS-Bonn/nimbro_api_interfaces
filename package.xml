@@ -2,20 +2,17 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>nimbro_api_interfaces</name>
-  <version>1.0.0</version>
-  <description>This package defines the ROS2 interfaces of the nimbro_api package.</description>
+  <version>1.1.0</version>
+  <description>ROS2 interface definitions for the nimbro_api package.</description>
+  <author email="paetzold@ais.uni-bonn.de">Bastian Pätzold</author>
   <maintainer email="paetzold@ais.uni-bonn.de">Bastian Pätzold</maintainer>
   <license>BSD-3-Clause</license>
-
   <buildtool_depend>ament_cmake</buildtool_depend>
-
   <build_depend>rosidl_default_generators</build_depend>
   <exec_depend>rosidl_default_runtime</exec_depend>
   <member_of_group>rosidl_interface_packages</member_of_group>
-
   <build_depend>std_msgs</build_depend>
   <build_depend>sensor_msgs</build_depend>
-
   <export>
     <build_type>ament_cmake</build_type>
   </export>

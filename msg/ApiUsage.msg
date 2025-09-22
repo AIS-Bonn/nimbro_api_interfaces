@@ -1,7 +1,0 @@
-string api_type
-string api_endpoint
-string model_name
-string identifier
-uint64 tokens_input_uncached
-uint64 tokens_input_cached
-uint64 tokens_output

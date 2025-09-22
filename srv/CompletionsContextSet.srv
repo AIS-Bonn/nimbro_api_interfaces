@@ -1,0 +1,12 @@
+string   completions_id              # Specifies the target completions node when addressing the completions_multiplexer
+string   mode                        # Mode to set context in ['reset', 'insert', 'remove', 'replace'].
+                                     # - reset: Context gets cleared and replaced by `new_messages`; `index` is ignored
+                                     # - insert: `new_messages` get inserted into context starting at `index`; Use `index` 0 with `indexing_last_to_first` to append
+                                     # - replace: `new_messages` replace context messages starting at `index`; `new_messages` are allowed to exceed context bounds
+                                     # - remove: Message at `index` gets removed from context; `new_messages` is ignored
+string[] new_messages                # See `mode`.
+uint32   index                       # See `mode`.
+bool     indexing_last_to_first true # Specifies whether `index` 0 points to the last (newest) or first (oldest) message in context
+---
+bool     success                     # Indicates the success or failure of the service call
+string   message                     # A natural language summary of the service call outcome
