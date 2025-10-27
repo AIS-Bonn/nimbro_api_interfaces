@@ -1,0 +1,10 @@
+string  path            # The path of the audio file transcribed
+string  model           # The name of the model used
+float32 temperature     # The sampling temperature between 0 and 1
+string  language        # The ISO-639-1 code of the input language or an empty string if unknown
+string  prompt          # A text in the input language to guide the model's style or an empty string to use default
+string  response_format # The transcription format in json, text, srt, verbose_json, vtt, or diarized_json
+---
+bool    success         # Indicates the success or failure of the service call
+string  message         # A natural language summary of the service call outcome
+string  transcription   # The resulting transcription object

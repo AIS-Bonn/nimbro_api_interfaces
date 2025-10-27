@@ -38,6 +38,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/ImagesGet.srv"
   "srv/NimbroVisionGet.srv"
   "srv/SpeechGet.srv"
+  "srv/TranscriptionsGet.srv"
+  "srv/TranslationsGet.srv"
   "srv/TriggerFeedback.srv"
   "srv/UsageGet.srv"
 
